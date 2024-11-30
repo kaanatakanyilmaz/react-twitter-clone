@@ -13,7 +13,7 @@ export default function Button({ size, children }) {
     },children)
 }
 Button.propTypes = {
-    size: PropTypes.oneOf(['normal', 'size'])
+    size: PropTypes.oneOf(['normal', 'large'])
 }
 
 Button.defaultProps = {
