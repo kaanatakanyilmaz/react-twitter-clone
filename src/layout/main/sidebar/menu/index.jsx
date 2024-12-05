@@ -12,7 +12,7 @@ function Menu() {
 
 
             {mainMenu.map((menu, index) => (
-                <NavLink to={menu.path} className="flex items-center group py-[3px]">
+                <NavLink to={menu?.path} key={index} className="flex items-center group py-[3px]">
 
                     {({ isActive }) => (
                         <div className={classNames("inline-flex items-center group-hover:bg-[#eff3f41a] p-3 rounded-full gap-5 transitions-colors", { "font-bold": isActive })}>
@@ -21,11 +21,11 @@ function Menu() {
                                 {
                                     menu.notification && (<span className="w-[18px] h-[18px] text-[11px] rounded-full bg-[#1d9bf0] absolute -top-1.5 -right-1 flex justify-center items-center">{menu?.notification}</span>)
                                 }
-                                {!isActive && menu.icon.passive}
-                                {isActive && menu.icon.active}
+                                {!isActive && menu?.icon.passive}
+                                {isActive && menu?.icon.active}
                             </div>
                             <div className=" text-xl pr-4">
-                                {menu.title}
+                                {menu?.title}
                             </div>
 
                         </div>
