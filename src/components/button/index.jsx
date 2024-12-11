@@ -7,10 +7,16 @@ export default function Button({ size, children }) {
     "button",
     {
       className: classNames(
-        "bg-[#eff3f4] text-[#0f1419] rounded-full font-bold flex items-center justify-center hover:bg-[#d7d8dc] transitions-colors   ",
+        "rounded-full font-bold flex items-center justify-center ",
         {
-          "px-4 h-9": size === "normal",
-          "px-4 h-[52px] text-[17px] w-full": size === "large",
+          "px-4 h-9 bg-[#1d9bf0] text hover:bg-[#007dd1] text-bg[#fff]  transitions-colors":
+            size === "blueNormal",
+          "px-4 h-9 bg-[#1d9bf0] text bg-[#eff3f4] hover:bg-[#d7d8dc] text-[#000]  transitions-colors":
+            size === "whiteNormal",
+          "px-4 h-[52px] text-[17px] w-full bg-[#1d9bf0] hover:bg-[#007dd1] text-[#fff]":
+            size === "blueLarge",
+          "px-4 h-[52px] text-[17px] w-full bg-[#eff3f4] hover:bg-[#d7d8dc] text-[#0f1419]":
+            size === "whiteLarge",
         }
       ),
     },
