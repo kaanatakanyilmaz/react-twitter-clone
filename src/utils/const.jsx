@@ -1,7 +1,5 @@
 import store from "../store";
 
-const states = store.getState();
-console.log(states);
 export const mainMenu = [
   {
     path: "/",
@@ -205,7 +203,9 @@ export const mainMenu = [
     },
   },
   {
-    path: `/${states?.auth?.currentAccount?.fullName}`,
+    path: () => {
+      return `/${store.getState()?.auth?.currentAccount?.username}`;
+    },
     title: "Profil",
     icon: {
       passive: (
@@ -339,5 +339,30 @@ export const moreConst = [
         </div>
       </button>
     ),
+  },
+];
+export const topic = [
+  {
+    title: "Gündemdekiler",
+    topic: {
+      type: "tag",
+      value: "FatihTerim",
+    },
+  },
+  {
+    title: "Gündemdekiler",
+    topic: {
+      type: "query",
+      value: "MümtazReis",
+    },
+    postCount: 13566,
+  },
+  {
+    title: "Gündemdekiler",
+    topic: {
+      type: "tag",
+      value: "OkanBuruk",
+    },
+    postCount: 7201,
   },
 ];

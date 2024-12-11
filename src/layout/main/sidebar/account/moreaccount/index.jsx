@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import { useAccount, useAccounts } from "../../../../../store/auth/hooks";
+import { setCurrentAccount } from "../../../../../store/auth/actions";
 
 function MoreAccount() {
   const accounts = useAccounts();
@@ -7,8 +8,9 @@ function MoreAccount() {
 
   return (
     <div className="py-3">
-      {accounts?.map((account, index) => (
+      {accounts?.slice(0, 2).map((account, index) => (
         <button
+          onClick={() => setCurrentAccount(account)}
           key={index}
           className={classNames(
             "w-full  flex items-center text-left py-3 px-4 font-bold transition-colors ",
@@ -46,7 +48,7 @@ function MoreAccount() {
       </button>
       <button className="w-full text-left">
         <div className="p-3 hover:bg-[#eff3f41a]  font-bold transition-colors">
-          {currentAccount.fullName} hesabından çıkış ya
+          {currentAccount.fullName} hesabından çıkış yap
         </div>
       </button>
     </div>
