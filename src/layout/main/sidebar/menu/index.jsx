@@ -17,7 +17,7 @@ function Menu() {
           {({ isActive }) => (
             <div
               className={classNames(
-                "inline-flex items-center group-hover:bg-[#eff3f41a] p-3 rounded-full gap-5 transitions-colors",
+                "inline-flex items-center group-hover:bg-[#eff3f41a] p-3 rounded-full gap-5 transition-colors",
                 { "font-bold": isActive }
               )}
             >

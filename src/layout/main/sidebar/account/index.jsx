@@ -8,7 +8,7 @@ function Account() {
   return (
     <div className="mt-auto ">
       <Popover className="relative">
-        <PopoverButton className="p-3 my-3 w-full outline-none hover:bg-[#eff3f41a]  rounded-full transitions-colors flex  ">
+        <PopoverButton className="p-3 my-3 w-full outline-none hover:bg-[#eff3f41a]  rounded-full transition-colors flex  ">
           <img src={account.avatar} className="w-10 h-10 rounded-full" alt="" />
 
           <div className="mx-3 text-[15px] text-left">

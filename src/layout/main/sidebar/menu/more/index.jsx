@@ -5,7 +5,7 @@ function More() {
     <Popover className="relative">
       <PopoverButton className=" flex items-center  py-[3px] outline-none">
         <button>
-          <div className="inline-flex items-center hover:bg-[#eff3f41a] p-3 rounded-full gap-5 transitions-colors">
+          <div className="inline-flex items-center hover:bg-[#eff3f41a] p-3 rounded-full gap-5 transition-colors">
             <div className="w-[26.25] h-[26.25] ">
               <svg viewBox="0 0 24 24" width={26.25} height={26.25}>
                 <path
@@ -24,7 +24,7 @@ function More() {
           {moreConst.map((menu, index) => (
             <button
               key={index}
-              className=" h-14 w-full inline-flex items-center hover:bg-[#eff3f41a] p-4 rounded-xl gap-5 transitions-colors"
+              className=" h-14 w-full inline-flex items-center hover:bg-[#eff3f41a] p-4 rounded-xl gap-5 transition-colors"
             >
               <div className="w-[26.25] h-[26.25] ">{menu?.panel}</div>
               <div className=" text-xl pr-4 font-bold">{menu?.title}</div>

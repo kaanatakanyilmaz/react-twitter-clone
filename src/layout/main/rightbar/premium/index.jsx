@@ -11,7 +11,7 @@ function Premium() {
           üreticisi gelir payı kazan.
         </p>
         <div>
-          <Button size={"normal"}>Abone ol</Button>
+          <Button size={"blueNormal"}>Abone ol</Button>
         </div>
       </div>
     </div>

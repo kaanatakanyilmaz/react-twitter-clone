@@ -17,7 +17,7 @@ function Topic({ item }) {
       <Popover className="absolute top-1.5 right-2">
         <PopoverButton
           className={
-            " outline-none w-[34.75px] h-[34.75px] text-[#71767b] rounded-full  flex items-center justify-center hover:bg-[#1d9bf01a] hover:text-[#1d9bf0] transitions-colors"
+            " outline-none w-[34.75px] h-[34.75px] text-[#71767b] rounded-full  flex items-center justify-center hover:bg-[#1d9bf01a] hover:text-[#1d9bf0] transition-colors"
           }
         >
           <svg viewBox="0 0 24 24" width={18.75} height={18.75}>

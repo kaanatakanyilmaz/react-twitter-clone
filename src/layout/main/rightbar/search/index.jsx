@@ -11,7 +11,10 @@ function Search() {
   });
 
   return (
-    <div ref={ref} className="h-[53px] mb-3 flex items-center relative">
+    <div
+      ref={ref}
+      className="h-[53px] mb-3 flex items-center sticky top-0 bg-black z-[1]"
+    >
       <label className="h-[44px]  rounded-full bg-[#202327] outline-none relative w-full border border-transparent group focus-within:bg-black focus-within:border-[#1d9bf0]">
         <div className="w-[56px] h-full flex items-center justify-center absolute top-0 left-0 pointer-events-none ">
           <svg
