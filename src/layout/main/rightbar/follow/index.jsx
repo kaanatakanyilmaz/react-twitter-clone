@@ -5,8 +5,8 @@ import UserCard from "../../../../components/user-card";
 function Follow() {
   return (
     <Link to="/" className="">
-      <div className="border border-[#2f3336] rounded-2xl  ">
-        <h5 className="text-[20px] leading-6 font-bold py-3 px-4">
+      <div className="border border-[color:var(--border-primary)] text-[color:var(--color-base)] rounded-2xl  ">
+        <h5 className="text-[20px] leading-6 font-bold py-3 px-4 ">
           Kimi takip etmeli
         </h5>
 
@@ -14,7 +14,7 @@ function Follow() {
           <UserCard user={user} key={user.id} />
         ))}
 
-        <div className=" text-left py-3 px-4">
+        <div className=" text-left py-3 px-4 hover:bg-[color:var(--hover-base-secondary)]">
           <a href="explore" className="text-[#1d9bf0]">
             Daha fazla göster
           </a>
@@ -23,4 +23,5 @@ function Follow() {
     </Link>
   );
 }
+
 export default Follow;

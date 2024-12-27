@@ -3,17 +3,16 @@ import Button from "../button";
 
 function UserCard({ user }) {
   const [following, setFollowing] = useState(false);
-  console.log(following);
 
   return (
-    <button className=" py-3 px-4 flex gap-3 hover:bg-white/[0.03] transition-colors w-full">
+    <button className=" py-3 px-4 flex gap-3 hover:bg-[color:var(--hover-base-secondary)] transition-colors w-full">
       <img
         src={user.avatar}
         className="w-10 h-10 rounded-full object-cover"
         alt=""
       />
       <div className="flex-1 flex flex-col  text-left ">
-        <div className="text-[15px] text-[#e7e9ea] font-bold  leading-5  flex item-center">
+        <div className="text-[15px] text-[color:var(--color-base)] font-bold  leading-5  flex item-center">
           {user.fullName}
           {user?.verified && (
             <svg
@@ -29,7 +28,9 @@ function UserCard({ user }) {
             </svg>
           )}
         </div>
-        <div className="text-[15px] text-[#71767b] ">{user.userName}</div>
+        <div className="text-[15px] text-[color:var(--color-base-secondary)] ">
+          {user.userName}
+        </div>
       </div>
 
       {following ? (
@@ -38,10 +39,10 @@ function UserCard({ user }) {
           onClick={() => setFollowing(false)}
           className="group"
         >
-          <div className="flex group-hover:hidden items-center px-4 h-8 bg-black border border-[#eff3f4] rounded-full  font-bold">
+          <div className="flex group-hover:hidden items-center px-4 h-8 bg-[color:var(--background-primary)]  border border-[color:var(--border-primary)] rounded-full  font-bold">
             Takip ediliyor
           </div>
-          <div className="hidden group-hover:flex items-center px-4 h-8 text-[#f4212e] bg-black border border-[#67070f] bg-[#f4212e1a] rounded-full  font-bold">
+          <div className="hidden group-hover:flex items-center px-4 h-8 text-[#f4212e]   border border-[#67070f] bg-[#f4212e1a] rounded-full  font-bold">
             Takip bırak
           </div>
         </Button>

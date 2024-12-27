@@ -13,15 +13,20 @@ function MoreAccount() {
           onClick={() => setCurrentAccount(account)}
           key={index}
           className={classNames(
-            "w-full  flex items-center text-left py-3 px-4 font-bold transition-colors ",
-            { "hover:bg-[#eff3f41a]": currentAccount.id !== account.id }
+            "w-full  flex items-center text-left py-3 px-4 font-bold transition-colors text-[color:var(--color-base)]",
+            {
+              "hover:bg-[color:var(--hover-base-account)]":
+                currentAccount.id !== account.id,
+            }
           )}
         >
           <img src={account.avatar} className="w-10 h-10 rounded-full" alt="" />
 
           <div className="mx-3 flex-1 text-[15px] text-left  ">
             <h6 className="font-bold  ">{account.userName}</h6>
-            <div className="text-[#71767b]">{account.fullName}</div>
+            <div className="text-[color:var(--color-base-secondary)]">
+              {account.fullName}
+            </div>
           </div>
 
           {currentAccount.id == account.id && (
@@ -34,20 +39,20 @@ function MoreAccount() {
           )}
         </button>
       ))}
-      <div className="my-3 h-px bg-[#2f3336]" />
+      <div className="my-3 h-px bg-[color:var(--border-primary)] " />
 
       <button className="w-full text-left ">
-        <div className="p-3 hover:bg-[#eff3f41a]  font-bold transition-colors">
+        <div className="p-3 hover:bg-[color:var(--hover-base-account)] text-[color:var(--color-base)]  font-bold transition-colors">
           Var olan bir hesap ekle
         </div>
       </button>
       <button className="w-full text-left ">
-        <div className="p-3 hover:bg-[#eff3f41a]  font-bold transition-colors">
+        <div className="p-3 hover:bg-[color:var(--hover-base-account)] text-[color:var(--color-base)]  font-bold transition-colors">
           Hesapları yönet
         </div>
       </button>
       <button className="w-full text-left">
-        <div className="p-3 hover:bg-[#eff3f41a]  font-bold transition-colors">
+        <div className="p-3 hover:bg-[color:var(--hover-base-account)] text-[color:var(--color-base)] font-bold transition-colors">
           {currentAccount.fullName} hesabından çıkış yap
         </div>
       </button>

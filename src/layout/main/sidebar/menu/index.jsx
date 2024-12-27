@@ -12,18 +12,18 @@ function Menu() {
         <NavLink
           to={typeof menu.path == "function" ? menu.path() : menu.path}
           key={index}
-          className="flex items-center group py-[3px]"
+          className="flex items-center group py-[3px] "
         >
           {({ isActive }) => (
             <div
               className={classNames(
-                "inline-flex items-center group-hover:bg-[#eff3f41a] p-3 rounded-full gap-5 transition-colors",
+                "inline-flex items-center text-[color:var(--color-base)] group-hover:bg-[color:var(--hover-base)] p-3 rounded-full gap-5 transition-colors",
                 { "font-bold": isActive }
               )}
             >
               <div className="w-[26.25] h-[26.25] relative">
                 {menu.notification && (
-                  <span className="w-[18px] h-[18px] text-[11px] rounded-full bg-[#1d9bf0] absolute -top-1.5 -right-1 flex justify-center items-center">
+                  <span className="w-[18px] h-[18px] text-[11px]  text-[#fff] rounded-full bg-[#1d9bf0] absolute -top-1.5 -right-1 flex justify-center items-center">
                     {menu?.notification}
                   </span>
                 )}
