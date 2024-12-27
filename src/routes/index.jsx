@@ -4,11 +4,13 @@ import Explore from "../pages/explore";
 import Home from "../pages/home";
 import ErrorFound from "../pages/errorfound";
 import MainLayout from "../layout/main";
-import Grok from "../pages/grok";
+
 import Message from "../pages/message";
 import Bookmarks from "../pages/bookmarks";
 import Communities from "../pages/communities";
 import Profile from "../pages/profile";
+import Premium from "../pages/premium";
+import List from "../pages/list";
 const routes = createBrowserRouter([
   {
     path: "/",
@@ -31,10 +33,7 @@ const routes = createBrowserRouter([
         path: "message",
         element: <Message />,
       },
-      {
-        path: "grok",
-        element: <Grok />,
-      },
+
       {
         path: "bookmarks",
         element: <Bookmarks />,
@@ -46,6 +45,10 @@ const routes = createBrowserRouter([
       {
         path: "profile",
         element: <Profile />,
+      },
+      {
+        path: "list",
+        element: <List />,
       },
 
       {

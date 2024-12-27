@@ -7,6 +7,23 @@ const initialState = {
     fullName: "@" + "kaatakann",
     avatar:
       "https://pbs.twimg.com/profile_images/1799188686141083648/RTjbxqkJ_400x400.jpg",
+
+    post: 27,
+    photos:
+      "https://pbs.twimg.com/profile_banners/1510930619680890880/1685291898/600x200",
+    date: {
+      day: 29,
+      mounth: "Mayıs",
+      year: 2001,
+    },
+    joining: {
+      mounth: "Nisan",
+      year: 2022,
+    },
+    follow: {
+      following: 43,
+      followers: 259,
+    },
   },
   accounts: [
     {
@@ -15,6 +32,23 @@ const initialState = {
       fullName: "@" + "kaatakann",
       avatar:
         "https://pbs.twimg.com/profile_images/1799188686141083648/RTjbxqkJ_400x400.jpg",
+
+      post: 27,
+      photos:
+        "https://pbs.twimg.com/profile_banners/1510930619680890880/1685291898/600x200",
+      date: {
+        day: 29,
+        mounth: "Mayıs",
+        year: 2001,
+      },
+      joining: {
+        mounth: "Nisan",
+        year: 2022,
+      },
+      follow: {
+        following: 259,
+        followers: 43,
+      },
     },
     {
       id: 2,
@@ -22,6 +56,21 @@ const initialState = {
       fullName: "@" + "fatihterim",
       avatar:
         "https://pbs.twimg.com/profile_images/1481692704195190796/gUEomF6Z_400x400.jpg",
+      photos:
+        "https://pbs.twimg.com/profile_banners/3040535475/1501431951/1500x500",
+      date: {
+        day: 29,
+        mounth: "Mayıs",
+        year: 2001,
+      },
+      joining: {
+        mounth: "Şubat",
+        year: 2015,
+      },
+      follow: {
+        following: 1,
+        followers: 1500000,
+      },
     },
   ],
 };
