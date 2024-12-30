@@ -1,14 +1,18 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import SideBar from "./sidebar";
 import RightBar from "./rightbar";
 import { useModal } from "../../store/modal/hooks";
 import Modal from "../../modals";
 import { useAppearance } from "../../store/appearance/hooks";
 import { useEffect } from "react";
+import Message from "../../pages/message";
+import Settings from "../../pages/settings";
+import classNames from "classnames";
 
 function MainLayout() {
   const modal = useModal();
   const appearance = useAppearance();
+  const location = useLocation();
 
   useEffect(() => {
     document.documentElement.style.setProperty(
@@ -70,16 +74,34 @@ function MainLayout() {
     );
   }, [appearance]);
 
+  const noRightBarRoutes = ["/message", "/settings"];
+
+  const hideRightBar = noRightBarRoutes.includes(location.pathname);
+
+  const noContent = ["/message", "/settings"];
+  const hideContent = noContent.includes(location.pathname);
+
+  const showMessage = ["/message"];
+  const showMessages = showMessage.includes(location.pathname);
+  const showSetting = ["/settings"];
+  const showSettings = showSetting.includes(location.pathname);
+
   return (
     <div className="w-[1265px] mx-auto flex">
       {modal && <Modal />}
       <SideBar />
       <main className="flex-1 flex gap-[30px]">
-        <main className=" flex-1 max-w-[600px] border-x border-[color:var(--border-primary)] ">
-          <Outlet>
-            <SideBar />
-          </Outlet>
+        <main
+          className={classNames(
+            "flex-1 border-x border-[color:var(--border-primary)]",
+            hideContent ? " max-w-[448px]" : " max-w-[600px]"
+          )}
+        >
+          {!hideContent && <Outlet />}
+          {showMessages && <Message />}
+          {showSettings && <Settings />}
         </main>
+
         <RightBar />
       </main>
     </div>

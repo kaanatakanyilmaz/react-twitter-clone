@@ -11,6 +11,7 @@ import Communities from "../pages/communities";
 import Profile from "../pages/profile";
 import Premium from "../pages/premium";
 import List from "../pages/list";
+import Settings from "../pages/settings";
 const routes = createBrowserRouter([
   {
     path: "/",
@@ -49,6 +50,10 @@ const routes = createBrowserRouter([
       {
         path: "list",
         element: <List />,
+      },
+      {
+        path: "settings",
+        element: <Settings />,
       },
 
       {
