@@ -11,7 +11,7 @@ function Bookmarks() {
   return (
     <div>
       <div>
-        <div className="flex justify-start items-center px-4 min-w-[56px] h-[53px]">
+        <div className="flex justify-start items-center px-4 min-w-[56px] h-[53px] text-[color:var(--color-base)] ">
           <div className="min-w-[56px] flex justify-start items-center">
             <button className="hover:bg-[color:var(--hover-base)] rounded-full p-1">
               <svg viewBox="0 0 24 24" width={20} height={20}>
@@ -39,14 +39,14 @@ function Bookmarks() {
             </button>
             <input
               type="text"
-              className="py-2 pl-[40px] w-full bg-[color:var(--background-primary)]   border-2 border-[color:var(--border-primary)]  outline-none rounded-full text-[15px] placeholder-[color:var(--color-base-secondary)] focus-within:border-[#1d9bf0]  "
+              className="py-2 pl-[40px] w-full bg-[color:var(--background-primary)] text-[color:var(--color-base)]  border-2 border-[color:var(--border-primary)]  outline-none rounded-full text-[15px] placeholder-[color:var(--color-base-secondary)] focus-within:border-[#1d9bf0]  "
               placeholder="Yer İşaretlerinde Ara"
               value={filter}
               onChange={(e) => setFiltered(e.target.value)}
             />
           </label>
         </div>
-        <div>
+        <div className="text-[color:var(--color-base)] ">
           {filteredPosts.map((post) => (
             <Post post={post} key={post.id} />
           ))}

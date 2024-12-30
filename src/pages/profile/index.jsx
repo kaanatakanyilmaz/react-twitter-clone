@@ -12,7 +12,7 @@ function Profile() {
 
   return (
     <div>
-      <div className=" px-4 h-[53px] w-full  flex sticky top-0 z-10 bg-[color:var(--background-primary)] backdrop-blur-md ">
+      <div className=" px-4 h-[53px] w-full  flex sticky top-0 z-10  bg-[color:var(--background-primary)] backdrop-blur-md ">
         <div className="min-w-[56px] min-h-[32px] flex justify-start items-center text-[color:var(--color-base)]">
           <button className=" -ml-2 p-2 hover:bg-[color:var(--hover-base)] rounded-full">
             <svg viewBox="0 0 24 24" width={20} height={20}>
@@ -46,7 +46,10 @@ function Profile() {
             </div>
 
             <button className="border border-[color:var(--color-base-secondary)] hover:bg-[color:var(--hover-base)] rounded-full px-4 py-1 mt-3 mr-4">
-              <p className="font-bold"> Profili düzenle</p>
+              <p className="font-bold text-[color:var(--color-base)]">
+                {" "}
+                Profili düzenle
+              </p>
             </button>
           </div>
         </div>
@@ -55,7 +58,9 @@ function Profile() {
       <div className="px-4">
         <div className="flex mt-1 mb-3">
           <div>
-            <p className="font-bold text-xl">{account.userName}</p>
+            <p className="font-bold text-xl text-[color:var(--color-base)]">
+              {account.userName}
+            </p>
             <p className="text-[15px] text-[color:var(--color-base-secondary)]">
               {account.fullName}
             </p>
@@ -106,7 +111,7 @@ function Profile() {
         </div>
         <div className="flex mt-2">
           <div className="flex mr-5">
-            <div className="font-bold">
+            <div className="font-bold text-[color:var(--color-base)]">
               {numberFormat(account.follow.following)}
             </div>
             <div className="ml-1 text-[color:var(--color-base-secondary)]">
@@ -114,7 +119,7 @@ function Profile() {
             </div>
           </div>
           <div className="flex">
-            <div className="font-bold">
+            <div className="font-bold text-[color:var(--color-base)]">
               {numberFormat(account.follow.followers)}
             </div>
             <div className="ml-1 mb-4 text-[color:var(--color-base-secondary)]">

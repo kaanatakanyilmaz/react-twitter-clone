@@ -8,7 +8,7 @@ function MoreAccount() {
 
   return (
     <div className="py-3">
-      {accounts?.slice(0, 2).map((account, index) => (
+      {accounts?.slice(0, 3).map((account, index) => (
         <button
           onClick={() => setCurrentAccount(account)}
           key={index}

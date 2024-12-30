@@ -35,7 +35,7 @@ function ChatRoom() {
         </h6>
         <Popover>
           <PopoverButton className="group">
-            <div className="flex flex-col rounded border border-[#393337] w-[519px] group-hover:border-[#1d9bf0]">
+            <div className="flex flex-col rounded border border-[#393337] w-[519px] group-hover:border-[color:var(--color-primary)]">
               <label class="text-[color:var(--color-base)] text-[13px] font-medium pl-2 bg-[color:var(--background-primary)]   py-3 pt-1  leading-5 focus:outline-none text-left -mb-5">
                 Kimler konuşabilir?
               </label>
@@ -60,21 +60,21 @@ function ChatRoom() {
           <PopoverPanel className="flex flex-col text-left border border-[#393337] w-[517px] text-[color:var(--color-base)] ">
             <button
               id="1"
-              className="hover:bg-[#7db1e5] hover:text-[color:var(--color-base)] text-left px-2 "
+              className="hover:bg-[color:var(--color-primary)] hover:text-[color:var(--color-base)] text-left px-2 "
               onClick={() => setSelect("Sadece konuşmaya davet ettiklerin")}
             >
               Sadece konuşmaya davet ettiklerin
             </button>
             <button
               id="2"
-              className="hover:bg-[#7db1e5] hover:text-[color:var(--color-base)] text-left px-2 "
+              className="hover:bg-[color:var(--color-primary)] hover:text-[color:var(--color-base)] text-left px-2 "
               onClick={() => setSelect("Takip ettiğin kişiler")}
             >
               Takip ettiğin kişiler
             </button>
             <button
               id="3"
-              className="hover:bg-[#7db1e5] hover:text-[color:var(--color-base)] text-left px-2 "
+              className="hover:bg-[color:var(--color-primary)] hover:text-[color:var(--color-base)] text-left px-2 "
               onClick={() => setSelect("Herkes")}
             >
               Herkes
@@ -86,21 +86,21 @@ function ChatRoom() {
           <input
             type="text"
             placeholder="Nelerden bahsetmek istiyorsun?"
-            className=" placeholder:[#333639] rounded-full leading-4 bg-[color:var(--background-primary)] border   border-[#333639] px-4 h-[40px] w-full text-[color:var(--color-base)] focus:outline-none focus:border-[#1d9bf0]"
+            className=" placeholder:[#333639] rounded-full leading-4 bg-[color:var(--background-primary)] border   border-[#333639] px-4 h-[40px] w-full text-[color:var(--color-base)] focus:outline-none focus:border-[color:var(--color-primary)]"
           />
         </div>
 
-        <button className="hover:bg-[#1d9bf01a] rounded-full px-4 leading-5 text-[#1d9bf0] text-[15px] font-bold min-h-[36px]">
+        <button className="hover:bg-[#1d9bf01a] rounded-full px-4 leading-5 text-[color:var(--color-primary)] text-[15px] font-bold min-h-[36px]">
           Konu Ekle (0/3)
         </button>
 
         <div className="flex justify-between items-center ">
           <div className="flex flex-row gap-1  items-center">
             <span>Sohbet Odasını Kaydet</span>
-            <div className="hover:bg-[#1d9bf01a] rounded-full p-1">
+            <div className="hover:bg-[#1d9bf01a] rounded-full text-[color:var(--color-primary)] p-1">
               <svg viewBox="0 0 24 24" width={22} height={22}>
                 <path
-                  fill="#1d9bf0"
+                  fill="currentColor"
                   d="M13.5 8.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5S11.17 7 12 7s1.5.67 1.5 1.5zM13 17v-5h-2v5h2zm-1 5.25c5.66 0 10.25-4.59 10.25-10.25S17.66 1.75 12 1.75 1.75 6.34 1.75 12 6.34 22.25 12 22.25zM20.25 12c0 4.56-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12 7.44 3.75 12 3.75s8.25 3.69 8.25 8.25z"
                 />
               </svg>
@@ -109,29 +109,29 @@ function ChatRoom() {
           <div class="flex justify-center items-center">
             <label class="relative flex flex-col justify-center">
               <input type="checkbox" class="sr-only peer" />
-              <span class=" w-[40px] h-[15px]  bg-[#939393] rounded-full peer-checked:bg-[#6bc9fb] transition duration-300"></span>
-              <span class="absolute  left-0 w-5 h-5 bg-[#fff] peer-checked:bg-[#1d9bf0] rounded-full shadow-md peer-checked:translate-x-6 transition-transform duration-300"></span>
+              <span class=" w-[40px] h-[15px]  bg-[#939393] rounded-full peer-checked:bg-[color:var(--color-primary)] transition duration-300"></span>
+              <span class="absolute  left-0 w-5 h-5 bg-[#fff] peer-checked:bg-[color:var(--color-primary)] rounded-full shadow-md peer-checked:translate-x-6 transition-transform duration-300"></span>
             </label>
           </div>
         </div>
 
         <div className="flex  flex-row gap-8 ">
           <Button
-            size="blueLarge"
-            className="w-[467px] h-[44px] bg-[#1d9bf0] rounded-full font-bold text-[#fff]"
+            size="whiteLarge"
+            className="w-[467px] h-[44px] bg-[color:var(--color-primary)] rounded-full font-bold text-[#fff]"
           >
             Şimdi Başlat
           </Button>
-          <button className="border border-[#536471] rounded-full p-3 hover:bg-[#1d9bf01a]">
+          <button className="border border-[#536471] text-[color:var(--color-primary)] rounded-full p-3 hover:bg-[#1d9bf01a]">
             <svg viewBox="0 0 24 24" width={22} height={22} className="">
               <path
-                fill="#1d9bf0"
+                fill="currentColor"
                 d="M6 3V2h2v1h6V2h2v1h1.5C18.88 3 20 4.119 20 5.5v2h-2v-2c0-.276-.22-.5-.5-.5H16v1h-2V5H8v1H6V5H4.5c-.28 0-.5.224-.5.5v12c0 .276.22.5.5.5h3v2h-3C3.12 20 2 18.881 2 17.5v-12C2 4.119 3.12 3 4.5 3H6zm9.5 8c-2.49 0-4.5 2.015-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.015 4.5-4.5-2.01-4.5-4.5-4.5zM9 15.5C9 11.91 11.91 9 15.5 9s6.5 2.91 6.5 6.5-2.91 6.5-6.5 6.5S9 19.09 9 15.5zm5.5-2.5h2v2.086l1.71 1.707-1.42 1.414-2.29-2.293V13z"
               />
             </svg>
           </button>
         </div>
-        <button className="hover:bg-[#1d9bf01a] rounded-full px-4 leading-5 text-[#1d9bf0] text-[15px] font-bold min-h-[36px]">
+        <button className="hover:bg-[#1d9bf01a] rounded-full px-4 leading-5 text-[color:var(--color-primary)] text-[15px] font-bold min-h-[36px]">
           Sohbet odaları hakkında bilgi edin
         </button>
       </div>

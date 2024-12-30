@@ -15,7 +15,7 @@ function Topics() {
 
         <Link
           to="trends"
-          className="text-[#1d9bf0] hover:bg-[color:var(--hover-base-secondary)] h-[52px] flex items-center  text-[15px]  px-4"
+          className="text-[color:var(--color-primary)] hover:bg-[color:var(--hover-base-secondary)] h-[52px] flex items-center  text-[15px]  px-4"
         >
           Daha fazla göster
         </Link>

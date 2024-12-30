@@ -2,18 +2,20 @@ import { removeModal } from "../../store/modal/actions";
 import Button from "../../components/button";
 function VerifiedModal() {
   return (
-    <div className="bg-[color:var(--background-primary)] h-full w-full ">
+    <div className="bg-[color:var(--background-primary)]  text-[color:var(--color-base)] h-full w-full ">
       <div className="px-6 py-6">
         <button
           onClick={() => removeModal()}
           className="flex items-center justify-center"
         >
-          <svg viewBox="0 0 24 24" width={20} height={20}>
-            <path
-              fill="#fff"
-              d="M10.59 12L4.54 5.96l1.42-1.42L12 10.59l6.04-6.05 1.42 1.42L13.41 12l6.05 6.04-1.42 1.42L12 13.41l-6.04 6.05-1.42-1.42L10.59 12z"
-            ></path>
-          </svg>
+          <div className="hover:bg-[color:var(--hover-base)] p-2 rounded-full">
+            <svg viewBox="0 0 24 24" width={20} height={20}>
+              <path
+                fill="currentColor"
+                d="M10.59 12L4.54 5.96l1.42-1.42L12 10.59l6.04-6.05 1.42 1.42L13.41 12l6.05 6.04-1.42 1.42L12 13.41l-6.04 6.05-1.42-1.42L10.59 12z"
+              ></path>
+            </svg>
+          </div>
         </button>
       </div>
 

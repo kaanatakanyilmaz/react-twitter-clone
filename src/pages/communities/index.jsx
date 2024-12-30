@@ -13,7 +13,7 @@ function Communities() {
   return (
     <div>
       <div>
-        <div className="flex justify-start items-center px-4 min-w-[56px] h-[53px] border-b border-[color:var(--border-primary)]">
+        <div className="flex justify-start items-center px-4 min-w-[56px] h-[53px] text-[color:var(--color-base)]  border-b border-[color:var(--border-primary)]">
           <div className="min-w-[56px] flex justify-start items-center">
             <button className="hover:bg-[color:var(--hover-base)] rounded-full p-1">
               <svg viewBox="0 0 24 24" width={20} height={20}>
@@ -31,88 +31,88 @@ function Communities() {
             <div id="slider" className="flex transition-transform duration-300">
               <button
                 onClick={() => setFiltered("Spor")}
-                className="ml-2 m-2 px-4  hover:bg-[color:var(--hover-base)] border border-[color:var(--border-primary)] rounded-full"
+                className="ml-2 m-2 px-4 text-[color:var(--color-base)] font-bold hover:bg-[color:var(--hover-base)] border border-[color:var(--border-primary)] rounded-full"
               >
                 Spor
               </button>
               <button
                 onClick={() => setFiltered("Teknoloji")}
-                className=" m-2 px-4 py-1 hover:bg-[color:var(--hover-base)] border border-[color:var(--border-primary)] rounded-full"
+                className=" m-2 px-4 py-1 hover:bg-[color:var(--hover-base)] text-[color:var(--color-base)] font-bold border border-[color:var(--border-primary)] rounded-full"
               >
                 Teknoloji
               </button>
 
               <button
                 onClick={() => setFiltered("Sanat")}
-                className=" m-2 px-4 hover:bg-[color:var(--hover-base)] border border-[color:var(--border-primary)] rounded-full"
+                className=" m-2 px-4 hover:bg-[color:var(--hover-base)] text-[color:var(--color-base)] font-bold border border-[color:var(--border-primary)] rounded-full"
               >
                 Sanat
               </button>
               <button
                 onClick={() => setFiltered("Eğlence")}
-                className=" m-2 px-4 hover:bg-[color:var(--hover-base)]  border border-[color:var(--border-primary)] rounded-full"
+                className=" m-2 px-4 hover:bg-[color:var(--hover-base)] text-[color:var(--color-base)] font-bold  border border-[color:var(--border-primary)] rounded-full"
               >
                 Eğlence
               </button>
               <button
                 onClick={() => setFiltered("Oyun")}
-                className=" m-2 px-4  hover:bg-[color:var(--hover-base)] border border-[color:var(--border-primary)] rounded-full"
+                className=" m-2 px-4  hover:bg-[color:var(--hover-base)] text-[color:var(--color-base)] font-bold border border-[color:var(--border-primary)] rounded-full"
               >
                 Oyun
               </button>
               <button
                 onClick={() => setFiltered("Siyaset")}
-                className=" m-2 px-4  hover:bg-[color:var(--hover-base)] border border-[color:var(--border-primary)] rounded-full"
+                className=" m-2 px-4  hover:bg-[color:var(--hover-base)] text-[color:var(--color-base)] font-bold border border-[color:var(--border-primary)] rounded-full"
               >
                 Siyaset
               </button>
               <button
                 onClick={() => setFiltered("İşletme")}
-                className=" m-2 px-4 hover:bg-[color:var(--hover-base)]  border border-[color:var(--border-primary)] rounded-full"
+                className=" m-2 px-4 hover:bg-[color:var(--hover-base)] text-[color:var(--color-base)] font-bold  border border-[color:var(--border-primary)] rounded-full"
               >
                 İşletme
               </button>
               <button
                 onClick={() => setFiltered("Kültür")}
-                className=" m-2 px-4  hover:bg-[color:var(--hover-base)] border border-[color:var(--border-primary)] rounded-full"
+                className=" m-2 px-4  hover:bg-[color:var(--hover-base)] text-[color:var(--color-base)] font-bold border border-[color:var(--border-primary)] rounded-full"
               >
                 Kültür
               </button>
               <button
                 onClick={() => setFiltered("Bilim")}
-                className=" m-2 px-4  hover:bg-[color:var(--hover-base)] border border-[color:var(--border-primary)] rounded-full"
+                className=" m-2 px-4  hover:bg-[color:var(--hover-base)] text-[color:var(--color-base)] font-bold border border-[color:var(--border-primary)] rounded-full"
               >
                 Bilim
               </button>
               <button
                 onClick={() => setFiltered("Yemek")}
-                className=" m-2 px-4  hover:bg-[color:var(--hover-base)] border border-[color:var(--border-primary)] rounded-full"
+                className=" m-2 px-4  hover:bg-[color:var(--hover-base)] text-[color:var(--color-base)] font-bold border border-[color:var(--border-primary)] rounded-full"
               >
                 Yemek
               </button>
               <button
                 onClick={() => setFiltered("Hayvanlar")}
-                className=" m-2 px-4  hover:bg-[color:var(--hover-base)] border border-[color:var(--border-primary)] rounded-full"
+                className=" m-2 px-4  hover:bg-[color:var(--hover-base)] text-[color:var(--color-base)] font-bold border border-[color:var(--border-primary)] rounded-full"
               >
                 Hayvanlar
               </button>
               <button
                 onClick={() => setFiltered("Eğitim")}
-                className=" m-2 px-4 hover:bg-[color:var(--hover-base)] border border-[color:var(--border-primary)] rounded-full"
+                className=" m-2 px-4 hover:bg-[color:var(--hover-base)] text-[color:var(--color-base)] font-bold border border-[color:var(--border-primary)] rounded-full"
               >
                 Eğitim
               </button>
 
               <button
                 onClick={() => setFiltered("Haberler")}
-                className=" m-2 px-4 hover:bg-[color:var(--hover-base)] border border-[color:var(--border-primary)] rounded-full"
+                className=" m-2 px-4 hover:bg-[color:var(--hover-base)] text-[color:var(--color-base)] font-bold border border-[color:var(--border-primary)] rounded-full"
               >
                 Haberler
               </button>
 
               <button
                 onClick={() => setFiltered("Seyahat")}
-                className=" m-2 px-4 hover:bg-[color:var(--hover-base)] border border-[color:var(--border-primary)] rounded-full"
+                className=" m-2 px-4 hover:bg-[color:var(--hover-base)] text-[color:var(--color-base)] font-bold border border-[color:var(--border-primary)] rounded-full"
               >
                 Seyahat
               </button>
@@ -143,7 +143,7 @@ function Communities() {
             </button>
           </div>
         </div>
-        <div>
+        <div className="text-[color:var(--color-base)] ">
           {filteredPosts.map((post) => (
             <Post post={post} key={post.id} />
           ))}

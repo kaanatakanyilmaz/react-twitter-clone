@@ -77,7 +77,10 @@ function More() {
             </div>
             <div className=" text-xl pr-4 font-bold">Reklamlar</div>
           </Link>
-          <button className=" h-14 w-full inline-flex items-center hover:bg-[#eff3f41a] p-4 rounded-xl gap-5 transition-colors">
+          <button
+            onClick={() => setModal("isler")}
+            className=" h-14 w-full inline-flex items-center hover:bg-[#eff3f41a] p-4 rounded-xl gap-5 transition-colors"
+          >
             <div className="w-[26.25] h-[26.25] ">
               <button>
                 <div>
@@ -146,7 +149,10 @@ function More() {
             </div>
             <div className=" text-xl pr-4 font-bold">Sohbet Odanı oluştur</div>
           </button>
-          <button className=" h-14 w-full inline-flex items-center hover:bg-[#eff3f41a] p-4 rounded-xl gap-5 transition-colors">
+          <Link
+            to="settings"
+            className=" h-14 w-full inline-flex items-center hover:bg-[#eff3f41a] p-4 rounded-xl gap-5 transition-colors"
+          >
             <div className="w-[26.25] h-[26.25] ">
               <button>
                 <div>
@@ -160,7 +166,7 @@ function More() {
               </button>
             </div>
             <div className=" text-xl pr-4 font-bold">Ayarlar ve gizlilik</div>
-          </button>
+          </Link>
         </div>
       </PopoverPanel>
     </Popover>

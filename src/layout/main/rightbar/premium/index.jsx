@@ -11,7 +11,12 @@ function Premium() {
           üreticisi gelir payı kazan.
         </p>
         <div>
-          <Button size={"blueNormal"}>Abone ol</Button>
+          <Button
+            size={"whiteNormal"}
+            className="bg-[color:var(--color-primary)] px-4 py-2 rounded-full font-bold"
+          >
+            Abone ol
+          </Button>
         </div>
       </div>
     </div>

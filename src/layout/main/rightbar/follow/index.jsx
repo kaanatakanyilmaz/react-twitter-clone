@@ -15,7 +15,7 @@ function Follow() {
         ))}
 
         <div className=" text-left py-3 px-4 hover:bg-[color:var(--hover-base-secondary)]">
-          <a href="explore" className="text-[#1d9bf0]">
+          <a href="explore" className="text-[color:var(--color-primary)]">
             Daha fazla göster
           </a>
         </div>

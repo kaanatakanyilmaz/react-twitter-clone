@@ -17,7 +17,7 @@ function Lists() {
     <div>
       <div
         ref={ref}
-        className=" px-4 mb-3 flex flex-wrap items-center justify-between sticky top-0 bg-[color:var(--background-primary)] z-[1]"
+        className=" px-4 mb-3 flex flex-wrap items-center justify-between sticky top-0 bg-[color:var(--background-primary)] text-[color:var(--color-base)] z-[1]"
       >
         <div>
           <button className="hover:bg-[color:var(--hover-base)] rounded-full p-1">
@@ -30,7 +30,7 @@ function Lists() {
           </button>
         </div>
 
-        <div className="flex w-[432px] ml-5 mt-1">
+        <div className="flex w-[432px] ml-5 mt-1 ">
           <label className="h-[42px]  rounded-full bg-[color:var(--background-primary)] outline-none relative w-full border border-[color:var(--border-primary)]  group focus-within:bg-black focus-within:border-[#1d9bf0]">
             <div className="w-[56px] h-full flex items-center justify-center absolute top-0 left-0 pointer-events-none ">
               <svg
@@ -75,7 +75,7 @@ function Lists() {
           )}
         </div>
         <div className="flex">
-          <div className="hover:bg-[color:var(--hover-base)] rounded-full">
+          <div className="hover:bg-[color:var(--hover-base)] rounded-full ">
             <svg
               viewBox="0 0 24 24"
               className="w-[19px] h-[19px] text-[color:var(--color-base-secondary)]  m-2 "
@@ -99,7 +99,7 @@ function Lists() {
           </div>
         </div>
       </div>
-      <p className="py-3 px-4 text-xl font-bold text-[color:var(--color-base-primary)]">
+      <p className="py-3 px-4 text-xl font-bold text-[color:var(--color-base)]">
         Yeni Listeler Keşfet
       </p>
       <div className="w-full">
@@ -108,7 +108,7 @@ function Lists() {
         ))}
       </div>
       <div className=" text-left py-4 px-4 hover:bg-[color:var(--hover-base-secondary)] border-b border-[color:var(--border-primary)]">
-        <a href="explore" className="text-[#1d9bf0]">
+        <a href="explore" className="text-[color:var(--color-primary)]">
           Daha fazla göster
         </a>
       </div>
