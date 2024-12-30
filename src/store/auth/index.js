@@ -72,6 +72,30 @@ const initialState = {
         followers: 1500000,
       },
     },
+    {
+      id: 3,
+      userName: "emir",
+      fullName: "@" + "moriarty_34",
+      avatar:
+        "https://pbs.twimg.com/profile_images/1772157308413325312/-4CDCS4Z_400x400.jpg",
+
+      post: 55,
+      photos:
+        "https://pbs.twimg.com/profile_banners/1314583322241241088/1697565120/1500x500",
+      date: {
+        day: 18,
+        mounth: "Ekim",
+        year: 2000,
+      },
+      joining: {
+        mounth: "Ekim",
+        year: 2020,
+      },
+      follow: {
+        following: 272,
+        followers: 12,
+      },
+    },
   ],
 };
 const auth = createSlice({

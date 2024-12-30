@@ -3,6 +3,7 @@ import Comment from "../modals/comment";
 import PremiumModal from "../modals/premium-modal";
 import View from "../modals/view";
 import VerifiedModal from "../modals/verified-modal";
+import Works from "../modals/works";
 
 const modals = [
   {
@@ -24,6 +25,10 @@ const modals = [
   {
     name: "verifiedmodal",
     component: VerifiedModal,
+  },
+  {
+    name: "isler",
+    component: Works,
   },
 ];
 
