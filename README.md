@@ -1,6 +1,6 @@
 # React Twitter Clone
 
-Bu proje, Twitter benzeri bir sosyal medya platformunun temel özelliklerini geliştirmek için React ve Vite kullanılarak oluşturulmuştur.
+Bu proje, Twitter benzeri bir sosyal medya platformunun temel olarak kopyası şeklinde React ve Vite kullanılarak oluşturulmuştur.
 
 ## Kullanılan Teknolojiler
 
@@ -30,6 +30,7 @@ Bu proje, Twitter benzeri bir sosyal medya platformunun temel özelliklerini gel
 ## Kurulum
 
 1. Depoyu klonlayın:
+
    ```bash
    git clone https://github.com/kaanatakanyilmaz/react-twitter-clone.git
 
