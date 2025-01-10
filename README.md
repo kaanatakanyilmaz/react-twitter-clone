@@ -1,5 +1,4 @@
-# React Twitter Clone
-
+React Twitter Clone  
 Bu proje, Twitter benzeri bir sosyal medya platformunun temel olarak kopyası şeklinde React ve Vite kullanılarak oluşturulmuştur.
 
 ## Kullanılan Teknolojiler
@@ -19,10 +18,25 @@ Bu proje, Twitter benzeri bir sosyal medya platformunun temel olarak kopyası ş
 
 ### Geliştirme Araçları
 
-- **@types/react** ve **@types/react-dom**: React ile TypeScript kullanımı için gerekli tip tanımlamalarını içerir.
+- **@types/react ve @types/react-dom**: React ile TypeScript kullanımı için gerekli tip tanımlamalarını içerir.
 
 ## Özellikler
 
 - **Modern UI**: React ve TailwindCSS kullanılarak tasarlanmış sade ve modern bir kullanıcı arayüzü.
 - **Routing**: React Router ile çoklu sayfa desteği.
 - **State Yönetimi**: Redux Toolkit ile güçlü ve ölçeklenebilir state yönetimi.
+- **Tema Desteği**: Üç farklı tema modu (Loş, Beyaz, Siyah) eklenmiştir. Kullanıcılar tercih ettikleri temayı seçerek kişiselleştirilmiş bir deneyim yaşayabilir.
+
+## Projeden Görseller
+
+### Profil Görseli
+
+![Profil Görseli](images/1.png)
+
+### Modal Görseli
+
+![Modal Görseli](images/2.png)
+
+### Genel Sayfa Görseli
+
+![Genel Sayfa Görseli](images/3.png)
