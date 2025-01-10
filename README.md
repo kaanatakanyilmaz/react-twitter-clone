@@ -31,13 +31,12 @@ Bu proje, Twitter benzeri bir sosyal medya platformunun temel olarak kopyası ş
 
 ### Profil Görseli
 
-![Profil Görseli] ![1](https://github.com/user-attachments/assets/7ab03b3d-3754-4f77-8cc1-1f555573c5d8)
+![1](https://github.com/user-attachments/assets/7ab03b3d-3754-4f77-8cc1-1f555573c5d8)
 
 ### Modal Görseli
 
-![Modal Görseli] ![2](https://github.com/user-attachments/assets/c1714249-6051-4b51-97ac-213bae6871e2)
+![2](https://github.com/user-attachments/assets/c1714249-6051-4b51-97ac-213bae6871e2)
 
 ### Genel Sayfa Görseli
 
-![Genel Sayfa Görseli] 
 ![3](https://github.com/user-attachments/assets/9ae1a876-bada-416f-a30f-fac63950db97)
