@@ -1,4 +1,4 @@
-React Twitter Clone  
+# React Twitter Clone
 Bu proje, Twitter benzeri bir sosyal medya platformunun temel olarak kopyası şeklinde React ve Vite kullanılarak oluşturulmuştur.
 
 ## Kullanılan Teknolojiler
